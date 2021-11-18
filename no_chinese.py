@@ -1,8 +1,8 @@
 import os
 import shutil
 
-input_label_dir = './data/math_210421/formula_labels_210421_no_error_mathpix/'
-output_label_dir = './data/math_210421/formula_labels_210421_no_chinese/'
+input_label_dir = '/kaggle/input/formula-image/math_labels/math_formula_images_grey_labels'
+output_label_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels_no_chinese/'
 
 label_name_list = os.listdir(input_label_dir)
 
@@ -73,14 +73,14 @@ for label_name in label_name_list:
         # shutil.copy(label_file_name, output_label_dir + label_name)
         with open(output_label_dir + label_name, 'w', encoding='utf-8') as f:
             f.write(new_content)
-    else:
-        with open('./data/math_210421/formula_labels_210421_chinese/' + label_name, 'w', encoding='utf-8') as f:
-            f.write(new_content)
+    # else:
+    #     with open('/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels_chinese/' + label_name, 'w', encoding='utf-8') as f:
+    #         f.write(new_content)
 
     # if have_chinese is True:
     #     print()
 
-with open('./data/math_210421/chinese_token.txt', 'w', encoding='utf-8') as f:
-    chinese_token_list = list(set(chinese_token_list))
-    for chinese_token in chinese_token_list:
-        f.write(chinese_token + '\n')
+# with open('./chinese_token.txt', 'w', encoding='utf-8') as f:
+#     chinese_token_list = list(set(chinese_token_list))
+#     for chinese_token in chinese_token_list:
+#         f.write(chinese_token + '\n')

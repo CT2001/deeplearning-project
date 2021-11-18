@@ -27,8 +27,8 @@ import shutil
 
 # 筛除error mathpix
 
-input_label_dir = './data/math_210421/formula_labels_210421/'
-output_label_dir = './data/math_210421/formula_labels_210421_no_error_mathpix/'
+input_label_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels_no_chinese/'
+output_label_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels/'
 
 label_name_list = os.listdir(input_label_dir)
 
