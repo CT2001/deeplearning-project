@@ -1,12 +1,12 @@
 import os
 import shutil
 
-input_label_dir = '/kaggle/input/formula-image/math_labels/math_formula_images_grey_labels'
+input_label_dir = '/kaggle/input/formula-image/math_labels/math_formula_images_grey_labels/'
 output_label_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels_no_chinese/'
 
 label_name_list = os.listdir(input_label_dir)
 
-with open('./data_preprocess/vocab.txt', 'r', encoding='utf-8') as f:
+with open('./vocab.txt', 'r', encoding='utf-8') as f:
     vocab = f.read().split()
 
 max_token_len = 0
