@@ -7,8 +7,7 @@ import shutil
 input_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels/'
 output_dir = '/kaggle/working/formula-image/math_labels/'
 output_file = '/kaggle/working/formula-image/math_labels/im2latex_formulas.norm.lst'
-image_input_dir = '/kaggle/input/formula-image/math_formula_images_grey/math_formula_images_grey/'
-# image_output_dir = '../data/math_210421/formula_images/'
+image_input_dir = '/kaggle/working/formula-image/math_images/'
 image_name_list = os.listdir(image_input_dir)
 
 label_name_list = os.listdir(input_dir)
