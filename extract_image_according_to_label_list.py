@@ -1,9 +1,9 @@
 import os
 import shutil
 
-label_dir = './data/math_210421/formula_labels_210421_no_chinese/'
-image_dir = './data/math_210421/formula_images/'
-output_dir ='./data/math_210421/formula_images_210421/'
+label_dir = '/kaggle/working/formula-image/math_labels/math_formula_images_grey_labels/'
+image_dir = '/kaggle/input/formula-image/math_formula_images_grey/math_formula_images_grey/'
+output_dir ='/kaggle/working/formula-image/math_images/'
 
 label_name_list = os.listdir(label_dir)
 
